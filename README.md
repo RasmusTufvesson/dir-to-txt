@@ -16,6 +16,6 @@ You can do "python code.py -h" to get optional parameters
 Default is "."
 replace PATH with the path to start the program from
 
--s STDOUT
+-f FILE
 Default is None
-replace STDOUT with the output file for the program
+replace FILE with the output file for the program

@@ -55,7 +55,7 @@ def get_folder_path(path: list):
 #    else:
 #        return False
 
-def create_list(li, re, filt):
+""" def create_list(li, re, filt):
     h=[]
     for filename in li:
         try:
@@ -69,7 +69,7 @@ def create_list(li, re, filt):
             err=sys.exc_info()
             traceback.print_exception(*err)
             
-    return h
+    return h """
 
 global_path = ""
 
@@ -110,13 +110,13 @@ def parse(d):
     return file_parser.parse(d)
 
 #starter
-def main(path: str = ".", stdout = None):
+def main(path: str = ".", file = None):
     global folder
     search_folder(path, [])
-    if stdout == None:
+    if file == None:
         print (parse(folder))
     else:
-        with open(stdout, "wb") as file:
+        with open(file, "wb") as file:
             file.write(parse(folder).encode("utf-8"))
 
 #argument parser
