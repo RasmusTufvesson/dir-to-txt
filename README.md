@@ -7,6 +7,10 @@ argh
 
 pip install argh
 
+reader
+
+https://github.com/RasmusTufvesson/readerlib
+
 ## How to use
 The base command to run the program is "python code.py"
 
